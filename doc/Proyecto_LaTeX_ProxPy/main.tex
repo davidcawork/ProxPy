@@ -1,0 +1,35 @@
+\documentclass[oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{vmargin}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{minted}
+\usepackage[toc,page]{appendix}
+\newcommand{\shellcmd}[1]{\\\indent\indent\texttt{\footnotesize\# #1}\\}
+\addto\captionsspanish{%
+  \renewcommand\appendixname{Anexo}
+  \renewcommand\appendixpagename{Anexos}
+}
+\renewcommand\appendixtocname{Anexos}
+\title{Memoria Proxy Web - ProxPy }
+\author{David Carrascal Acebron}
+\date{Abril 2019}
+\setpapersize{A4}
+\setmargins{2.5cm}       % margen izquierdo
+{1.5cm}                        % margen superior
+{16.5cm}                      % anchura del texto
+{23.42cm}                    % altura del texto
+{10pt}                           % altura de los encabezados
+{1cm}                           % espacio entre el texto y los encabezados
+{0pt}                             % altura del pie de página
+{2cm}  
+\begin{document}
+\maketitle
+\tableofcontents{}
+ 
+\input{ProxPy.tex}
+\input{logger.tex}
+
+\end{document}
